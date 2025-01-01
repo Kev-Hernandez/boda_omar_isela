@@ -1,0 +1,118 @@
+.music-player {
+    position: fixed;
+    bottom: 15px;
+    right: 17px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #657B71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.play-button {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.play-button i {
+    font-size: 20px;
+    color: #657B71;
+}
+
+.music-player.playing .play-button {
+    width: 25px;
+    height: 25px;
+    transform: rotate(360deg);
+}
+
+.music-player.playing .play-button i {
+    color: #808b48;
+}
+
+.music-player.playing {
+    background-color: #808b48;
+}
+
+#countdown {
+    font-family: 'Great Vibes';
+    font-size: 1.8rem; /* Tamaño de fuente adecuado */
+    font-weight: 600; /* Peso de la fuente para mayor énfasis */
+    color: #2c3e50; /* Color oscuro para buena legibilidad */
+    margin: 0; /* Sin márgenes innecesarios */
+}
+
+.countdown-container {
+    margin-top: 10px;
+    background-color: #f3f0df;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.countdown-container p {
+    font-family: 'Great Vibes', sans-serif; /* Fuente también para el texto "Tiempo Restante" */
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #b4b2b2;
+}
+
+.story-description p {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: #fff; /* Color del texto */
+    padding: 15px; /* Espaciado dentro del párrafo */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 3px solid #fff; /* Contorno blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    font-size: 1.1em; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+
+/* Cambiar color del título */
+.couple-section .title-section h2 {
+    color: #000000; /* Color del texto del título */
+}
+
+/* Cambiar color del párrafo */
+.couple-section p {
+    color: #141414; /* Color del texto del párrafo */
+}
+
+/* Cambiar el color de fondo de la sección */
+.couple-section {
+    background-color: #ede9f3; /* Color de fondo que desees */
+}
+
+.background-section {
+    background-image: url('/img/ubicacion.png'); /* Cambia la ruta según la ubicación de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.venue-description {
+    background-color: #f0f8ff; /* Color de fondo deseado */
+    padding: 20px; /* Opcional, para agregar espacio interno */
+    border-radius: 8px; /* Opcional, para esquinas redondeadas */
+}
+
+.venue-wrapper2 {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad */
+    border-radius: 15px; /* Esquinas redondeadas */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera (opcional) */
+    margin: 20px; /* Separación externa (opcional) */
+}
+
+
