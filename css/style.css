@@ -45,19 +45,19 @@
 
 #countdown {
     font-family: 'Great Vibes';
-    font-size: 1.8rem; /* Tamaño de fuente adecuado */
+    font-size: 1.6rem; /* Tamaño de fuente adecuado */
     font-weight: 600; /* Peso de la fuente para mayor énfasis */
-    color: #2c3e50; /* Color oscuro para buena legibilidad */
+    color: #080b0e; /* Color oscuro para buena legibilidad */
     margin: 0; /* Sin márgenes innecesarios */
 }
 
 .countdown-container {
     margin-top: 10px;
-    background-color: #f3f0df;
+    background-color: #f0e8ba;
     border-radius: 10px;
     padding: 15px;
     width: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     text-align: center;
 }
 
@@ -96,6 +96,7 @@
 
 .background-section {
     background-image: url('/img/ubicacion.png'); /* Cambia la ruta según la ubicación de tu imagen */
+    border-radius: 15px;
     background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -113,6 +114,41 @@
     padding: 20px; /* Espaciado interno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera (opcional) */
     margin: 20px; /* Separación externa (opcional) */
+}
+
+.name-maincover {
+    font-size: 150px; /* Cambia este valor al tamaño que prefieras */
+    font-weight: bold; /* Opcional: define el grosor de la letra */
+    color: #333; /* Opcional: cambia el color */
+    text-align: center; /* Centra el texto */
+}
+
+.styled-background {
+    background-color: rgba(160, 153, 115, 0.8); /* Gris semitransparente */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Espaciado externo centrado */
+    max-width: 600px; /* Ancho máximo del contenedor */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.styled-background p {
+    color: #333; /* Color más intenso, por ejemplo, gris oscuro */
+    font-weight: bold; /* Negrita */
+    font-size: 18px; /* Ajuste opcional del tamaño de fuente */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+
+.styled-title-background {
+    background-color: rgba(160, 153, 115, 0.8); /* Gris semitransparente */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Espaciado externo centrado */
+    max-width: 600px; /* Ancho máximo del contenedor */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 
