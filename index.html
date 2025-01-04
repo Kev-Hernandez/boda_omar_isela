@@ -23,10 +23,81 @@
     <link rel="stylesheet" href="/css/gift_registry.css?v=17eba8d59bf3887de543e28da2fff5b0b1918b11">
     <link rel="stylesheet" href="/css/boxicons.css">
     <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Meta Open Graph -->
+    <meta property="og:title" content="Boda Isela y Omar" />
+    <meta property="og:description" content="Acompáñanos a celebrar este día tan especial con nosotros. ¡Será un evento inolvidable!" />
+    <meta property="og:image" content="https://kev-hernandez.github.io/boda_omar_isela/img/boda.png" />
+    <meta property="og:url" content="https://kev-hernandez.github.io/boda_omar_isela/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Meta Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Boda Isela y Omar" />
+    <meta name="twitter:description" content="Acompáñanos a celebrar este día tan especial con nosotros. ¡Será un evento inolvidable!" />
+    <meta name="twitter:image" content="https://kev-hernandez.github.io/boda_omar_isela/img/boda.png" />
+
 </head>
 
+<style>
+    body {
+      padding-top: 56px; /* Ajustar para evitar que el contenido quede oculto detrás de la barra */
+    }
+  </style>
 
 <body>
+
+
+    <header>
+        <!-- Barra de Navegación -->
+        <nav class="navbar  navbar-light bg-light fixed-top">
+          <div class="container">
+            <a class="name-main " style="font-size: 3rem; color: #333;" href="#home">Isela & Omar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#couple">PAREJA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#historia">NUESTRA HISTORIA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">UBICACIÓN</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#time">CONTADOR</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+      <!-- Bootstrap JS and dependencies -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
     </div>
     <div class="main-app">
         <!-- Loader -->
@@ -58,7 +129,7 @@
                                 <div class="greeting-wrapper" data-anim="zoom-out">
                                 </div>
                                 <div data-anim="fade-down">
-                                    <p style="font-family: 'Great Vibes', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem; 
+                                    <p style="font-family: 'Great Vibes', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.5rem; 
                                              font-weight: 600; color: #757575; line-height: 1.6; text-align: center;">
                                         Tenemos el gusto de invitarte en este día tan importante de nuestras vidas
                                     </p>
@@ -96,7 +167,7 @@
 
         <div class="moveable_section_wrapper">
             <!-- Header section -->
-            <section class="header-section">
+            <section id="home" class="header-section">
                 <div class="music-player playing">
                     <div class="play-button">
                         <i class="bx bx-headphone"></i>
@@ -240,7 +311,8 @@
             </section>
 
             <!-- Couple section -->
-            <section class="couple-section moveable-section background-section" data-id="1">
+             
+            <section id="couple" class="couple-section moveable-section background-section" data-id="1">
                 <div class="container position-relative">
                     <div class="row justify-content-evenly">
                         <div class="col-lg-8 col-md-10 position-relative">
@@ -394,7 +466,7 @@
             </section>
 
             <!-- Story section -->
-            <section class="couple-section story-section moveable-section" data-id="2">
+            <section id="historia" class="couple-section story-section moveable-section" data-id="2">
                 <div class="elements-wrapper-absolute">
                     <div class="background-element">
                         <img src="img/ubicacion.png"
@@ -408,10 +480,11 @@
                                 <div class="col-12 col-md-8 col-lg-6">
                                     <div style=" padding: 10px 20px; font-weight: bold; text-decoration: none; border-radius: 5px; margin-top: 15px;" data-anim="zoom-in">
                                         <div class="title-section">
-                                            <h2 style="display: inline-block; padding: 10px 20px; background-color: #9c977f; color: rgb(0, 0, 0); font-size: 30px; font-weight: bold; text-decoration: none; border-radius: 5px; margin-top: 15px;" class="styled-title-background title-section">Nuestra Historia</h2>
+                                            <h2 style="display: inline-block; padding: 10px 20px; background-color: #9c977f; color: rgb(0, 0, 0); font-size: 30px; font-weight: bold; text-decoration: none; border-radius: 5px; margin-top: 15px;" class="styled-title-background title-section">
+                                                Nuestra Historia</h2>
                                         </div>
                                         <div class="image-wrapper" style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                                            <img src="./img/our-story3.png" alt="story-image" class="story-image" style="width: 150%; height: auto;">
+                                            <img src="./img/our-story2.png" alt="story-image" class="story-image" style="width: 100%; height: auto;">
                                         </div>
                                         <div style=" padding: 10px 20px; background-color: #9c977f; color: rgb(0, 0, 0); font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px; margin-top: 15px;" class="styled-background" data-anim="fade-up">
                                             <p>Desde que nuestras vidas se cruzaron, una simple coincidencia se transformó en un amor profundo.</p>
@@ -427,10 +500,10 @@
                 </div>
             </section>
 
-            <section class="couple-section moveable-section background-section" data-id="4">
+            <section id="events" class="couple-section moveable-section background-section" data-id="4">
                 <!-- Vanue & Event section -->
                 <section style=" padding: 10px 20px;  text-decoration: none; border-radius: 5px; margin-top: 15px;" class="venue-section">
-                    <div class="position-relative">
+                    <div class="position-relative"><br>
                         <div  style="display: inline-block; padding: 10px 20px; background-color: #9c977f; color: rgb(0, 0, 0); font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px; margin-top: 15px;" class=" styled-title-background title-section" data-anim="zoom-out">
                             <h2>Ubicación</h2>
                         </div>
@@ -824,26 +897,31 @@
                             </div>
                             <div class="gift-message-section" style="background-color: rgba(128, 128, 128, 0.7); padding: 30px; border-radius: 10px; text-align: center; color: rgb(0, 0, 0); margin-top: 20px;">
                                  <p style="font-size: 18px; font-weight: bold;"> No es necesario traer un obsequio.</p>
-                                    <p style="font-size: 18px; font-weight: bold;">Si lo desean, pueden hacernos llegar una botella de vino o licor de su elección o un detalle monetario por transferencia.</p>
+                                 <br>
+                                    <p style="font-size: 18px; font-weight: bold;">Su presencia es el mejor regalo que podemos recibir, por lo que no es necesario llevar obsequios</p>
+                                    <p style="font-size: 18px; font-weight: bold;">Si desean tener un detalle, estaremos encantados de recibir botellas de vino o licor, o tarjetas de regalo.</p>
+                                    <p style="font-size: 15px;">(Liverpool, Amazon, Google Play, Zara, Palacio de Hierro, H&M, entre otras).</p>
+                                    <br>
                                     <p style="font-size: 18px; font-weight: bold;">Agradecemos mucho su generosidad y apoyo en este día tan especial.</p>
                             </div>
                         </div>
                     </div>
 
+                    <!--
                     <div class="gift-message-section" data-anim="zoom-out" style="background-color: rgba(128, 128, 128, 0.7); padding: 30px; border-radius: 10px; text-align: center; color: white; margin-top: 20px;">  
                         <div style="margin-top: 20px;">
-                            <!-- Botón para ver datos de transferencia -->
+                            <!-- Botón para ver datos de transferencia
                             <button onclick="document.getElementById('transfer-details').style.display='block'" style="padding: 10px 20px; background-color: #4CAF50; color: white; font-size: 16px; font-weight: bold; border: none; border-radius: 5px; margin-right: 10px;">
                                 Ver Datos para Transferencia
                             </button><br><br>
                     
-                            <!-- Botón para redirigir a PayPal -->
+                            <!-- Botón para redirigir a PayPal
                             <a href="https://www.paypal.me/KevHernCont" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #0070ba; color: white; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px;">
                                 Realizar Pago con PayPal
                             </a>
                         </div>
                     
-                        <!-- Detalles para la transferencia (inicialmente ocultos) -->
+                        <!-- Detalles para la transferencia (inicialmente ocultos)
                         <div id="transfer-details" style="display:none; margin-top: 20px; padding: 10px; background-color: rgba(0, 0, 0, 0.5); border-radius: 5px;">
                             <p style="color: white; font-size: 16px;">Aquí están los datos para realizar la transferencia:</p>
                             <ul style="list-style-type: none; padding-left: 0;">
@@ -855,16 +933,14 @@
                             <button onclick="document.getElementById('transfer-details').style.display='none'" style="padding: 10px 20px; background-color: #f44336; color: white; font-size: 16px; font-weight: bold; border: none; border-radius: 5px;">
                                 Cerrar
                             </button>
-                        </div>
+                        </div> 
 
                         <!-- Detalles para la transferencia mercado pago (inicialmente ocultos) 
                         <a href="https://www.mercadopago.com/checkout/v1/redirect?pref_id=YOUR_PREFERENCE_ID" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #00a650; color: white; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px;">
                             Realizar Pago con MercadoPago
                         </a>-->
-                        
-                    </div>
+                    </div> 
                     
-
                 </div>
             </section>
 
@@ -901,7 +977,7 @@
             
 
             <!-- Thanks Section -->
-            <section class="thank-section moveable-section" data-id="9">
+            <section id="time" class="thank-section moveable-section" data-id="9">
                 <div class="orn-1">
                     <img src="https://media.viding.co/dmlkaW5nIGNvIGltYWdlIHByb3h5IGJ5IGZseS5pbw/rs:auto:0:0:1/g:no/aHR0cHM6Ly92aWRpbmcuY28vaW52aXRhdGlvbi90aGVtZV85MC9hc3NldHMvaW1hZ2VzL2NvdXBsZS1wb2hvbi0xLnBuZw.webp"
                         alt="couple-pohon-1" class="img-fluid" data-anim="fade-right">
@@ -998,10 +1074,12 @@
                                         <h2>GRACIAS</h2>
                                     </div>
                                     <div style="display: inline-block; padding: 10px 20px; background-color: #9c977f; color: rgb(0, 0, 0); font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px; margin-top: 15px;" class="styled-background" data-anim="fade-down">
-                                        <p>Agradecemos de todo corazón su compañía en este día tan especial.</p>
                                         <p>Sus oraciones y buenos deseos han llenado de amor y bendiciones este momento único en nuestras vidas.</p>
                                         <p>Que Dios los colme de felicidad.</p>
                                     </div>
+
+                                    <p>Reiniciar Ivitación<a href="#">  click aqui</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1032,7 +1110,11 @@
                     font-weight: 600;
                 }
             </style>
-            <p class="footer-text">Copyright ©2025 Created with ❤️ by <a href="https://www.instagram.com/kev_dev23/">kev_dev23</a></p>
+            <p class="footer-text">Copyright ©2025 Created with ❤️ by <a href="https://www.instagram.com/kev_dev23/profilecard/?igsh=bHdoMXo1a3Y2c2sz"> @kev_dev23</a>
+                <a href="https://www.instagram.com/kev_dev23"
+                class="sosmed color-secondary notranslate" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </p>
         </footer>
     </div>
 
