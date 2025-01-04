@@ -60,18 +60,10 @@
         <nav class="navbar  navbar-light bg-light fixed-top">
           <div class="container">
             <a class="name-main " style="font-size: 3rem; color: #333;" href="#home">Isela & Omar</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarResponsive"
-              aria-controls="navbarResponsive"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="#home">INICIO</a>
@@ -1577,5 +1569,24 @@
         data-cf-beacon='{"rayId":"8123e5abe9575cd6","token":"9788b2a8af4d4335bde0fab3174b2eed","version":"2023.8.0","si":100}'
         crossorigin="anonymous"></script>
 </body>
+<script>
+    // Esperar a que el documento esté listo
+    document.addEventListener("DOMContentLoaded", function() {
+      // Obtener todos los enlaces dentro de la barra de navegación
+      var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  
+      // Agregar un event listener a cada enlace
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          // Si la barra de navegación está abierta, la cerramos
+          var navbarCollapse = document.getElementById('navbarNav');
+          if (navbarCollapse.classList.contains('show')) {
+            navbarCollapse.classList.remove('show');
+          }
+        });
+      });
+    });
+  </script>
+  
 
 </html>
