@@ -122,59 +122,65 @@
                     <img src="img/main-background3.png" alt="bg-cover" width="1440" height="810">
                 </div>
             </div>
-            <div class="container h-100">
-                <div class="cover-wrapper h-100">
+            <div class="container h-100" style="display: flex; align-items: center; justify-content: center; padding-top: 10px;">
+                <div class="cover-wrapper h-100" style="width: 100%; max-width: 800px; margin: 0 auto; text-align: center;">
                     <div class="cover-content">
                         <div class="cover-body">
-                            <div class="cover-description">
+                            <div class="cover-description" style="padding: 10px;">
+                                <!-- Texto principal -->
                                 <div data-anim="fade-down">
-                                    <span style="font-family: 'Tangerine', serif; font-size: 1.5rem; color: #000000;  transition: transform 0.3s ease, background-color 0.3s ease;">
-                                        Tenemos el gusto de invitarte en este día tan importante de nuestras vidas
-                                    </sapn><br>
-                                    <span style="font-family: 'Tangerine', serif; font-size: 4rem; color: #000000;  transition: transform 0.3s ease, background-color 0.3s ease;">
-                                        Nuestra Boda</span>
+                                    <span style=" font-family: 'Tangerine', serif; font-size: 1.5rem; color: #000;">Tenemos el gusto de invitarte en este día tan importante de nuestras vidas</span>
+                                    <br>
+                                    <span style="font-family: 'Tangerine', serif; font-size: 4rem; color: #000;">Nuestra Boda</span>
                                 </div>
                                 <div data-anim="fade-down">
-                                    <span style="font-family: 'Tangerine', serif; font-size: 4rem; color: #948a68;  transition: transform 0.3s ease, background-color 0.3s ease;">
-                                    Isela & Omar</span>
+                                    <span style="font-family: 'Tangerine', serif; font-size: 4rem; color: #948a68;">Isela & Omar</span>
                                 </div>
-                                
+                                <!-- Fecha -->
                                 <div data-anim="fade-down">
-                                    <p style="font-family: 'Great Vibes', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem; 
-                                             font-weight: 600; color: #3d3d3d; line-height: 1.6; text-align: center;">
-                                        08/02/25
-                                    </p>
+                                    <p style="font-family: 'Great Vibes', serif; font-size: 1.8rem; font-weight: 600; color: #020202; margin: 10px 0;">08/02/25</p>
                                 </div>
-                                
+                                <!-- Tiempo restante -->
                                 <div class="elements-widget" data-anim="zoom-out">
-                                    <div style="display: flex; justify-content: center; align-items: center;">
-                                        <div style=" text-align: center;">
-                                            <p style="font-family: 'Tangerine', serif; font-size: 2rem; color: #333;  transition: transform 0.3s ease, background-color 0.3s ease;" >Tiempo Restante:</p>
-                                        </div>
+                                    <div style="margin: 10px 0;">
+                                        <p style="font-family: 'Tangerine', serif; font-size: 1.5rem; color: #000000;">Tiempo Restante:</p>
                                     </div>
-                                    <div class="reminder-content">
-                                        <div class="countdown" date="02/08/2025 14:00:00 UTC" data-anim="zoom-in">
-                                            <div class="days" data-anim="zoom-out">
+                                    <div class="reminder-content" style="display: flex; justify-content: center; gap: 10px;">
+                                        <div class="countdown" date="02/08/2025 14:00:00 UTC">
+                                            <div class="days">
                                                 <p class="angka">00</p>
                                                 <p class="huruf">Días</p>
-                                            </div> 
-                                            <div class="hours" data-anim="zoom-out">
+                                            </div>
+                                            <div class="hours">
                                                 <p class="angka">00</p>
                                                 <p class="huruf">Horas</p>
                                             </div>
-                                            <div class="minutes" data-anim="zoom-out">
+                                            <div class="minutes">
                                                 <p class="angka">00</p>
                                                 <p class="huruf">Min</p>
                                             </div>
-                                            <div class="seconds" data-anim="zoom-out">
+                                            <div class="seconds">
                                                 <p class="angka">00</p>
                                                 <p class="huruf">Seg</p>
                                             </div>
-                                        </div><br>
-                                    <button class="btn btn-custom color-secondary" id="btn-envelope">
-                                        <strong style="font-family: 'Tangerine', serif; font-size: 150%;" >Abrir Invitación</strong>
-                                        <i class="fas fa-envelope-open-text"></i>
-                                    </button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                <!-- Botón Abrir Invitación -->
+                                <button id="btn-envelope" 
+                                    style="display: inline-block; 
+                                    font-family: 'Tangerine', serif; 
+                                    font-size: 1.5rem; 
+                                    color: #000000; 
+                                    background: linear-gradient(45deg, #c7c5c3, #92918b);
+                                    padding: 15px 30px; 
+                                    border: none; 
+                                    border-radius: 25px;
+                                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+                                    cursor: pointer; 
+                                    transition: all 0.3s ease;">
+                                    <span style="font-weight: bold;">Abrir Invitación</span> <i class="fas fa-envelope-open-text" style="margin-left: 10px;"></i>
+                                </button>
                                 </div>
                             </div>
                         </div>
